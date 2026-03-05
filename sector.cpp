@@ -3,12 +3,12 @@
 int main() {
     setlocale(LC_ALL, "RUSSIAN");
     int x{ 0 }; int summ{ 0 };
-    std::cout << "Ââåäèòå öåëîå ÷èñëî:\n";
+    std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¶Ã¥Ã«Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã®:\n";
     std::cin >> x;
     if (x < 0) x *= -1;
     do {
         summ += x % 10;
         x /= 10;
     } while (x != 0);
-    std::cout << "Ñóììà öèôð: " << summ << "\n";
+    std::cout << "Ã‘Ã³Ã¬Ã¬Ã  Ã¶Ã¨Ã´Ã°: " << summ << "\n";
 }
